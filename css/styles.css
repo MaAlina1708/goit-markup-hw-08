@@ -1,14 +1,10 @@
-/* white */
-/*  accent  */
-/* black main  */
-/* black grey  */
 :root {
   --primary-text-color: #757575;
   --primary-white-color: #ffffff;
   --primary-black-color: #212121;
   --accent-color: #2196f3;
-  --primary-font-family: Roboto;
-  --secondary-font-family: Raleway;
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
   --btn-portfolio-color: #f5f4fa;
 }
 body {
