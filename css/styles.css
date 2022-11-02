@@ -17,8 +17,19 @@ body {
 button {
   font-family: inherit;
 }
+header {
+  border-bottom: 1px solid #ececec;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
@@ -39,7 +50,10 @@ button {
 .logo.foot {
   color: var(--btn-portfolio-color);
   background-color: silver;
+  display: inline-block;
+  margin-bottom: 20px;
 }
+
 .site-nav .link {
   color: var(--primary-black-color);
 }
@@ -59,10 +73,14 @@ button {
 .contact-list .link:focus {
   color: var(--accent-color);
 }
+.contact-list {
+  margin-bottom: 32px;
+}
 
 /* Hero */
 .hero {
   background-color: var(--primary-black-color);
+  text-align: center;
 }
 .hero .hero-title {
   color: var(--primary-white-color);
@@ -70,9 +88,10 @@ button {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .hero .button {
   background-color: var(--accent-color);
@@ -84,6 +103,7 @@ button {
   line-height: 1.88;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  padding: 10px 32px;
 }
 
 .hero .bututton:hover,
@@ -97,10 +117,14 @@ button {
 
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .feature-description {
   color: var(--primary-text-color);
   line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* <!-- Чим ми займаємось --> */
@@ -111,15 +135,26 @@ button {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section-title.work {
+  margin-bottom: 50px;
 }
 
 /* <!-- Наша команда --> */
+.team-list .team {
+  padding: 30px 70px;
+}
 .team-title {
   color: var(--primary-black-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .team-description {
@@ -127,6 +162,8 @@ button {
 
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* Footer */
 .adress-list {
@@ -141,6 +178,7 @@ button {
 .adress-list .link-tel {
   color: var(--primary-white-color);
   text-decoration: none;
+  padding-bottom: 9px;
 }
 .adress-list .link-email,
 .adress-list .link-tel {
@@ -152,34 +190,44 @@ button {
 }
 
 /* Porftolio page */
+
 .portfolio-filter .btn {
   color: var(--primary-black-color);
   background-color: var(--btn-portfolio-color);
-
-  cursor: pointer;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  border: 1px solid transparent;
 }
 .portfolio-filter .btn:hover,
 .portfolio-filter .btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
 }
+
 .portfolio-project {
   color: var(--primary-black-color);
 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 4px;
 }
 .portfolio-description {
   color: var(--primary-text-color);
 
   font-size: 16px;
   line-height: 1.88;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.portfolio-list .content {
+  padding: 20px 24px;
 }
