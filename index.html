@@ -18,18 +18,20 @@
   <body>
     <!-- Шапка сайту -->
     <header>
-      <div class="container">
+      <div class="container main-nav">
         <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
         <nav>
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="" class="link">Контакти</a></li>
+            <li class="item"><a href="./index.html" class="link current">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contact-list list">
-          <li><a href="mailto:info@devstudio.com" class="link current">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link">+380961111111</a></li>
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link current">info@devstudio.com</a>
+          </li>
+          <li class="item"><a href="tel:+380961111111" class="link">+380961111111</a></li>
         </ul>
       </div>
     </header>
@@ -49,25 +51,25 @@
         <div class="container">
           <h2 class="section-title">Наші особливості</h2>
           <ul class="feature-list list">
-            <li>
+            <li class="item">
               <h3 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="feature-description">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="feature-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="feature-description">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="feature-title">ПЛАНУВАННЯ</h3>
               <p class="feature-description">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="feature-description">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -78,11 +80,11 @@
       </section>
 
       <!-- Чим ми займаємось -->
-      <section class="section">
+      <section class="section no-padding">
         <div class="container">
           <h2 class="section-title work">Чим ми займаємося</h2>
           <ul class="work-list list">
-            <li>
+            <li class="item">
               <img
                 src="./images/project1.jpg"
                 width="370"
@@ -90,7 +92,7 @@
                 alt="Комп’ютер, створення десктопних додатків"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/project2.jpg"
                 width="370"
@@ -98,7 +100,7 @@
                 alt="Телефон, створення мобільних додатків"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/project3.jpg"
                 width="370"
@@ -115,7 +117,7 @@
         <div class="container">
           <h2 class="section-title work">Наша команда</h2>
           <ul class="team-list list">
-            <li>
+            <li class="item">
               <img
                 src="./images/ihor-demianenko.jpg"
                 width="270"
@@ -127,14 +129,14 @@
                 <p class="team-description">Product Designer</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img src="./images/olga-repina.jpg" width="270" height="260" alt="Ольга Рєпіна" />
               <div class="team">
                 <h3 class="team-title">Ольга Рєпіна</h3>
                 <p class="team-description">Frontend Developer</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/mikola-tarasov.jpg"
                 width="270"
@@ -146,7 +148,7 @@
                 <p class="team-description">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/mikhailo-ermakov.jpg"
                 width="270"
@@ -162,8 +164,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container">
+    <footer class="black">
+      <div class="container container">
         <a href="./index.html" class="logo foot link"><span class="accent">Web</span>Studio</a>
         <address>
           <ul class="adress-list list">

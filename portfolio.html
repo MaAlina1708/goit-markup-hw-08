@@ -6,30 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайту -->
     <header>
-      <div class="container">
+      <div class="container main-nav">
         <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
         <nav>
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Студія</a></li>
-            <li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-            <li><a href="" class="link">Контакти</a></li>
+            <li class="item"><a href="./index.html" class="link">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contact-list list">
-          <li><a href="mailto:info@devstudio.com" class="link current">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link">+380961111111</a></li>
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link current">info@devstudio.com</a>
+          </li>
+          <li class="item"><a href="tel:+380961111111" class="link">+380961111111</a></li>
         </ul>
       </div>
     </header>
@@ -41,29 +43,29 @@
         <div class="container">
           <h1 class="portfolio-title list">Що ми робимо</h1>
           <ul class="portfolio-filter list">
-            <li>
+            <li class="item">
               <button type="button" class="btn">Усі</button>
             </li>
 
-            <li>
+            <li class="item">
               <button type="button" class="btn">Веб-сайти</button>
             </li>
-            <li>
+            <li class="item">
               <button type="button" class="btn">Додатки</button>
             </li>
-            <li>
+            <li class="item">
               <button type="button" class="btn">Дизайн</button>
             </li>
-            <li>
+            <li class="item">
               <button type="button" class="btn">Маркетинг</button>
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section">
+        <!-- </section>
+      <section class="section"> -->
         <div class="container">
           <ul class="portfolio-list list">
-            <li>
+            <li class="item">
               <img
                 src="./images/portfolio-project1.jpg"
                 alt="Відкритий ноутбук з зображенням веб-сторінки"
@@ -75,7 +77,7 @@
                 <p class="portfolio-description">Веб-сайт</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/portfolio-project2.jpg"
                 alt=" Два баскетболісти з м’ячем"
@@ -87,7 +89,7 @@
                 <p class="portfolio-description">Дизайн</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/portfolio-project3.jpg"
                 alt="Зображення назви ресторану на картинці риби"
@@ -99,7 +101,7 @@
                 <p class="portfolio-description">Додаток</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/portfolio-project4.jpg"
                 alt="Чорні навушники"
@@ -111,7 +113,7 @@
                 <p class="portfolio-description">Маркетинг</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/portfolio-project5.jpg"
                 alt="Дві коробки одна біла інша коричнева"
@@ -123,7 +125,7 @@
                 <p class="portfolio-description">Додаток</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/portfolio-project6.jpg"
                 alt="Монітор ПК з чорним екраном і сайтом на ньому"
@@ -135,7 +137,7 @@
                 <p class="portfolio-description">Веб-сайт</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/portfolio-project7.jpg"
                 alt="Розворіт сторінки журналу "
@@ -147,7 +149,7 @@
                 <p class="portfolio-description">Дизайн</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/portfolio-project8.jpg"
                 alt="Етикетка з назвою біла на нитці"
@@ -159,7 +161,7 @@
                 <p class="portfolio-description">Маркетинг</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/portfolio-project9.jpg"
                 alt="Відкритий ноутбук з додатком на екрані"
@@ -175,7 +177,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="black">
       <div class="container">
         <a href="./index.html" class="logo foot link"><span class="accent">Web</span>Studio</a>
         <address>
