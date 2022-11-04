@@ -3,9 +3,11 @@
   --primary-white-color: #ffffff;
   --primary-black-color: #212121;
   --accent-color: #2196f3;
+  --btn-portfolio-color: #f5f4fa;
+  --footer-color: #2f303a;
+  --adress-list-color: rgba(255, 255, 255, 0.6);
   --primary-font-family: 'Roboto', sans-serif;
   --secondary-font-family: 'Raleway', sans-serif;
-  --btn-portfolio-color: #f5f4fa;
 }
 html {
   box-sizing: border-box;
@@ -54,24 +56,27 @@ button {
 
   font-size: 26px;
   line-height: 1.17;
+  padding: 24px;
 }
 .logo .accent {
   color: var(--accent-color);
 }
 .logo.foot {
   color: var(--btn-portfolio-color);
-
+  padding: 0;
   display: inline-block;
   margin-bottom: 20px;
-  padding-top: 60px;
 }
 .main-nav {
   display: flex;
   align-items: center;
 }
+
+.nav {
+  margin-left: 93px;
+}
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 
 /* .site-nav .item:not(:last-child) {
@@ -94,6 +99,7 @@ button {
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.17;
+  padding: 32px 0;
 }
 .contact-list .item + .item {
   margin-left: 50px;
@@ -113,7 +119,7 @@ button {
 
 /* Hero */
 .hero {
-  background-color: var(--primary-black-color);
+  background-color: var(--footer-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -138,6 +144,7 @@ button {
   font-size: 16px;
   line-height: 1.88;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
   padding: 10px 32px;
 }
@@ -194,6 +201,7 @@ button {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .work-list {
   display: flex;
   flex-wrap: wrap;
@@ -210,9 +218,18 @@ button {
 }
 
 /* <!-- Наша команда --> */
+.section.team {
+  background-color: #f5f4fa;
+}
 .team-list {
   display: flex;
   flex-wrap: wrap;
+}
+.team-list img,
+.portfolio-list img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .team-list .item {
   width: 270px;
@@ -226,7 +243,7 @@ button {
 }
 
 .team-list .team {
-  padding: 30px 70px;
+  padding: 30px 32px;
 }
 .team-title {
   color: var(--primary-black-color);
@@ -236,8 +253,8 @@ button {
   font-size: 16px;
   line-height: 1.19;
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+
   text-align: center;
 }
 
@@ -256,22 +273,21 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
-  padding-bottom: 60px;
 }
-.adress-list .link-adress,
-.adress-list .link-email,
-.adress-list .link-tel {
+.adress-list .link {
+  color: var(--adress-list-color);
+}
+.adress-list .link-adress {
   color: var(--primary-white-color);
   text-decoration: none;
-  padding-bottom: 9px;
 }
-.adress-list .link-email,
-.adress-list .link-tel {
-  color: var(--primary-text-color);
+
+.adress-list .link:hover,
+.adress-list .link:focus {
+  color: var(--accent-color);
 }
-.adress-list .link-adress:hover,
-.adress-list .link-adress:focus {
-  color: var(--primary-black-color);
+.adress-list .item {
+  margin-bottom: 9px;
 }
 
 /* Porftolio page */
@@ -282,12 +298,14 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .portfolio-filter .item {
   margin-right: 8px;
-  margin-bottom: 34px;
 }
-
+.portfolio-filter .item:nth-child(5n) {
+  margin-right: 0;
+}
 .portfolio-filter .btn {
   color: var(--primary-black-color);
   background-color: var(--btn-portfolio-color);
@@ -323,6 +341,13 @@ button {
 .portfolio-list .item:nth-child(3n) {
   margin-right: 0;
 }
+
+/* .portfolio-list .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.portfolio-list .item:nth-child(3n) {
+  margin-right: 0;
+} */
 .portfolio-project {
   color: var(--primary-black-color);
 
@@ -330,8 +355,7 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 .portfolio-description {
   color: var(--primary-text-color);
@@ -344,6 +368,7 @@ button {
 .portfolio-list .content {
   padding: 20px 24px;
 }
-.black {
-  background-color: #212121;
+.black-foot {
+  background-color: var(--footer-color);
+  padding: 60px;
 }
