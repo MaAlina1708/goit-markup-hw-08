@@ -20,7 +20,7 @@
     <header>
       <div class="container main-nav">
         <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
-        <nav class="nav">
+        <nav>
           <ul class="site-nav list">
             <li class="item"><a href="./index.html" class="link current">Студія</a></li>
             <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
@@ -29,16 +29,29 @@
         </nav>
         <ul class="contact-list list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link current">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="link-icon" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope "></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
-          <li class="item"><a href="tel:+380961111111" class="link">+380961111111</a></li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">
+              <svg class="link-icon" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+
+              +380961111111</a
+            >
+          </li>
         </ul>
       </div>
     </header>
 
     <main>
       <!-- Герой -->
-      <section class="hero">
+      <section class="hero overlay">
         <div class="container">
           <h1 class="hero-title">
             Ефективні рішення для <br />
@@ -54,24 +67,44 @@
           <h2 hidden class="section-title no-visible">Наші особливості</h2>
           <ul class="feature-list list">
             <li class="item">
+              <div class="font">
+                <svg class="icon-feature" width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="feature-description">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li class="item">
+              <div class="font">
+                <svg class="icon-feature" width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="feature-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="feature-description">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
             <li class="item">
+              <div class="font">
+                <svg class="icon-feature" width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="feature-title">ПЛАНУВАННЯ</h3>
               <p class="feature-description">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="item">
+              <div class="font">
+                <svg class="icon-feature" width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="feature-description">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.

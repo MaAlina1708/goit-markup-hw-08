@@ -67,6 +67,11 @@ button {
   display: inline-block;
   margin-bottom: 20px;
 }
+.link-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -96,6 +101,8 @@ button {
   line-height: 1.17;
 }
 .contact-list .link {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.17;
@@ -107,8 +114,11 @@ button {
 
 .contact-list {
   display: flex;
+  margin: 0;
+  padding: 0;
   margin-left: auto;
 }
+
 .site-nav .current,
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -118,15 +128,19 @@ button {
 }
 
 /* Hero */
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/overlay.jpg);
+}
 .hero {
-  background-color: var(--footer-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 .hero .hero-title {
   color: var(--primary-white-color);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -163,9 +177,24 @@ button {
   padding-top: 0;
   padding-bottom: 94px;
 }
+
 .feature-list {
   display: flex;
   flex-wrap: wrap;
+}
+.font {
+  background-color: var(--btn-portfolio-color);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+/* .icon-feature {
+  margin: 0;
+  padding: 0;
+  display: flex;
+} */
+.icon-feature {
+  display: flex;
 }
 .feature-list .item {
   width: 270px;
