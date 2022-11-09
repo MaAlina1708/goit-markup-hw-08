@@ -71,9 +71,12 @@ button {
 }
 
 .link-icon {
+  margin-right: 10px;
   fill: currentColor;
 }
-
+.telephone-mail {
+  display: flex;
+}
 .main-nav {
   display: flex;
   align-items: center;
@@ -107,6 +110,10 @@ button {
   margin: 0;
   padding: 0;
   margin-left: auto;
+}
+
+.contact-list .item {
+  display: block;
 }
 
 .contact-list .link {
