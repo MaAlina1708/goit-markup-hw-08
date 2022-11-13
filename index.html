@@ -59,7 +59,7 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button type="button" class="button">Замовити послугу</button>
+          <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -122,28 +122,37 @@
           <h2 class="section-title work">Чим ми займаємося</h2>
           <ul class="work-list list">
             <li class="item">
-              <img
-                src="./images/project1.jpg"
-                width="370"
-                height="294"
-                alt="Комп’ютер, створення десктопних додатків"
-              />
+              <div class="work-list-wrap">
+                <img
+                  src="./images/project1.jpg"
+                  width="370"
+                  height="294"
+                  alt="Комп’ютер, створення десктопних додатків"
+                />
+                <p class="work-list-text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/project2.jpg"
-                width="370"
-                height="294"
-                alt="Телефон, створення мобільних додатків"
-              />
+              <div class="work-list-wrap">
+                <img
+                  src="./images/project2.jpg"
+                  width="370"
+                  height="294"
+                  alt="Телефон, створення мобільних додатків"
+                />
+                <p class="work-list-text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/project3.jpg"
-                width="370"
-                height="294"
-                alt="Палітра кольорів на планшеті для дизайнера"
-              />
+              <div class="work-list-wrap">
+                <img
+                  src="./images/project3.jpg"
+                  width="370"
+                  height="294"
+                  alt="Палітра кольорів на планшеті для дизайнера"
+                />
+                <p class="work-list-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -432,5 +441,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-btn-icon">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

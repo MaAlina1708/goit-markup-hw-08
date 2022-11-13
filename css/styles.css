@@ -10,6 +10,8 @@
   --icon-social-color: #afb1b8;
   --primary-font-family: 'Roboto', sans-serif;
   --secondary-font-family: 'Raleway', sans-serif;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --time: 250ms;
 }
 html {
   box-sizing: border-box;
@@ -152,6 +154,23 @@ img {
 .contact-list .link:hover,
 .contact-list .link:focus {
   color: var(--accent-color);
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
+}
+.current {
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 /* -------------------Hero ------------*/
@@ -194,6 +213,8 @@ img {
 .hero .bututton:hover,
 .hero .bututton:focus {
   color: var(--accent-color);
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 /* --------------Особливості -----------*/
@@ -208,7 +229,7 @@ img {
 
 .feature-list {
   display: flex;
-  flex-wrap: wrap;
+
   gap: 30px;
 }
 .font {
@@ -262,10 +283,30 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  position: relative;
 }
 
 .section-title.work {
   margin-bottom: 50px;
+}
+.work-list-wrap {
+  position: relative;
+}
+.work-list-text {
+  margin: 0 auto;
+  padding: 27px;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  white-space: nowrap;
+  color: var(--primary-white-color);
 }
 
 /* <!-- Наша команда --> */
@@ -343,6 +384,8 @@ img {
   color: var(--primary-white-color);
   border-radius: 50%;
   border: 0;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 /* Our clients */
 
@@ -376,6 +419,8 @@ img {
 .client-link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 /* Footer */
@@ -395,6 +440,8 @@ img {
 .adress-list .link:hover,
 .adress-list .link:focus {
   color: var(--accent-color);
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 .adress-list .item {
   margin-bottom: 9px;
@@ -429,6 +476,8 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   cursor: pointer;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 .portfolio-list {
@@ -455,6 +504,34 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
+.portfolio-list-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-list-text {
+  margin: 0 auto;
+  font-weight: 400;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  color: var(--primary-white-color);
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform var(--time);
+  overflow: auto;
+}
+.portfolio-link:hover .portfolio-list-text,
+.portfolio-link:focus .portfolio-list-text {
+  transform: translateY(0);
+  transition-duration: var(--time);
+}
+
 .portfolio-project {
   color: var(--primary-black-color);
 
@@ -479,6 +556,8 @@ img {
 .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 .footer {
   background-color: var(--footer-color);
@@ -524,4 +603,50 @@ img {
 .join-link:hover,
 .join-link:focus {
   background-color: var(--accent-color);
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  transform: translate(-50%, -50%) scaleY(1) rotate(0);
+  transition: transform var(--time) var(--cubic);
+}
+.close-btn {
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, 0%) scaleY(0) rotate(-180deg);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
