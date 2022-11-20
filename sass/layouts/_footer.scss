@@ -1,0 +1,132 @@
+.footer-section {
+  background-color: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.footer-section_logo {
+  color: var(--btn-portfolio-color);
+  padding: 0;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-address-list {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+.footer-address-item {
+  margin-bottom: 9px;
+}
+.address-link {
+  color: var(--primary-white-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.footer-section-tel,
+.footer-section-email {
+  color: var(--footer-address-list-color);
+  transition-property: color;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
+  &:hover,
+  &:focus,
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.footer-form-submit {
+  margin-left: 93px;
+}
+.submit_heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+.submit_field {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: var(--primary-white-color);
+  outline: none;
+
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--footer-color);
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
+
+  &::placeholder {
+    transition-property: color;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cubic);
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.footer-submit-btn {
+  position: relative;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 62px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  color: var(--primary-white-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+}
+.icon-send {
+  position: absolute;
+  margin-left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
