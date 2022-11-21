@@ -1,4 +1,4 @@
-.staff-social-list {
+.team_social-list {
   display: inline-flex;
   flex-wrap: wrap;
   margin: 0;
@@ -7,7 +7,7 @@
   gap: 10px;
 }
 
-.social-link-icon {
+.social_link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@
   }
 }
 
-.icon-social {
+.social_icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
@@ -38,11 +38,11 @@
 .footer-social-links {
   margin-left: 70px;
 }
-.footer-social-list {
+.footer-social_list {
   display: flex;
   gap: 10px;
 }
-.footer-social-link-icon {
+.footer-social_icon {
   display: flex;
   justify-content: center;
   align-items: center;

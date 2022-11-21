@@ -24,7 +24,7 @@
   margin-right: 10px;
   fill: currentColor;
 }
-.contact-list_item-tel {
+.contact_item-tel {
   display: flex;
 }
 
@@ -78,13 +78,13 @@
   margin-left: auto;
 }
 
-.contact-list_item {
+.contact_item {
   display: block;
   margin-left: 50px;
 }
 
-.contact-list_item-email,
-.contact-list_item-tel {
+.contact_item-email,
+.contact_item-tel {
   align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;

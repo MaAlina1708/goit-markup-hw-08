@@ -1,6 +1,9 @@
-.team {
+.team-section {
+  padding-bottom: 94px;
+  padding-top: 94px;
   background-color: var(--section-color);
 }
+
 .team_heading {
   margin-top: 0;
   margin-bottom: 50px;
@@ -16,7 +19,7 @@
   gap: 30px;
 }
 
-.team-card {
+.team_card {
   width: 270px;
   background-color: var(--primary-white-color);
 
@@ -28,7 +31,7 @@
 .team-data {
   padding: 30px 32px;
 }
-.team_name-staff {
+.team_name {
   color: var(--primary-black-color);
 
   white-space: nowrap;
@@ -40,7 +43,7 @@
   text-align: center;
 }
 
-.team_position-staff {
+.team_position {
   color: var(--primary-text-color);
 
   white-space: nowrap;

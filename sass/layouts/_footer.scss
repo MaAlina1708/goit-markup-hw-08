@@ -9,19 +9,19 @@
   flex-wrap: wrap;
   align-items: baseline;
 }
-.footer-section_logo {
+.footer_logo {
   color: var(--btn-portfolio-color);
   padding: 0;
   display: inline-block;
   margin-bottom: 20px;
 }
 
-.footer-address-list {
+.footer_list {
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
 }
-.footer-address-item {
+.footer_item {
   margin-bottom: 9px;
 }
 .address-link {
@@ -31,9 +31,9 @@
     color: var(--accent-color);
   }
 }
-.footer-section-tel,
-.footer-section-email {
-  color: var(--footer-address-list-color);
+.footer_tel,
+.footer_email {
+  color: var(--footer_list-color);
   transition-property: color;
   transition-duration: var(--time);
   transition-timing-function: var(--cubic);
@@ -48,6 +48,10 @@
 .footer-heading {
   margin-top: 0;
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 
   text-transform: uppercase;
   color: var(--primary-white-color);
@@ -56,17 +60,7 @@
 .footer-form-submit {
   margin-left: 93px;
 }
-.submit_heading {
-  margin-top: 0;
-  margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-}
 .submit_field {
   display: flex;
   margin-top: 20px;
@@ -124,7 +118,7 @@
   font-size: 16px;
   line-height: 1.88;
 }
-.icon-send {
+.send-icon {
   position: absolute;
   margin-left: 10px;
   top: 50%;
