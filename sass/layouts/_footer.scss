@@ -4,16 +4,44 @@
   padding-bottom: 60px;
 }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.footer_wrap {
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer_logo {
   color: var(--btn-portfolio-color);
   padding: 0;
   display: inline-block;
   margin-bottom: 20px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .footer_list {
@@ -21,6 +49,7 @@
   font-weight: 400;
   line-height: 1.71;
 }
+
 .footer_item {
   margin-bottom: 9px;
 }
@@ -52,24 +81,27 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
 
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
 
 .footer-form-submit {
-  margin-left: 93px;
+  text-align: center;
 }
 
 .submit_field {
-  display: flex;
   margin-top: 20px;
 }
+
 .footer-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
+  margin: 0 auto;
+  margin-bottom: 20px;
 
   color: var(--primary-white-color);
   outline: none;

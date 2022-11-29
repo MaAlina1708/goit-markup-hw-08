@@ -1,9 +1,7 @@
 .team_social-list {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -36,10 +34,12 @@
 }
 
 .footer-social-links {
-  margin-left: 70px;
+  margin-bottom: 60px;
 }
+
 .footer-social_list {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 .footer-social_icon {

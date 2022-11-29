@@ -53,3 +53,27 @@
   margin-bottom: 12px;
   text-align: center;
 }
+
+@media screen and (min-width: 767.98px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team_card {
+    width: 100%;
+  }
+  .team_card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team_card {
+    width: calc((100% - 90px) / 4);
+    margin-right: 0px;
+    gap: 30px;
+  }
+}

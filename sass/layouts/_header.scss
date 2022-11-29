@@ -1,11 +1,36 @@
-.header-top {
+// .header-top {
+//   padding-top: 10px;
+//   padding-bottom: 10px;
+// }
+.header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  height: 60px;
+}
+@media screen and (min-width: 767px) {
+  .header {
+    padding-right: 10px;
+    height: 80px;
+  }
 }
 
 .nav-menu-list {
-  display: flex;
-  margin-left: 93px;
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-menu-list {
+    display: flex;
+    justify-content: center;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-menu-list {
+    display: flex;
+    justify-content: center;
+    margin-left: 93px;
+  }
 }
 .logo {
   color: var(--primary-black-color);
@@ -13,7 +38,7 @@
 
   font-size: 26px;
   line-height: 1.17;
-  padding: 24px;
+  // padding: 24px;
 }
 .logo-accent {
   color: var(--accent-color);
@@ -39,11 +64,12 @@
 .nav-menu_page {
   display: block;
   padding: 32px 0;
-
+  font-size: 14px;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
   color: var(--primary-black-color);
 
-  font-weight: 500;
-  line-height: 1.17;
   transition-property: color;
   transition-duration: var(--time);
   transition-timing-function: var(--cubic);
@@ -71,11 +97,20 @@
 }
 
 .contact-list {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
+  }
 }
 
 .contact_item {
@@ -85,6 +120,10 @@
 
 .contact_item-email,
 .contact_item-tel {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+
   align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -97,4 +136,123 @@
   &:hover {
     color: var(--accent-color);
   }
+  @media screen and (min-width: 1200px) {
+    &,
+    & {
+      font-size: 14px;
+    }
+  }
+}
+
+.menu-open {
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 767px;
+  background-color: white;
+  z-index: 3;
+
+  > .container {
+    padding: 48px 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+  }
+  // transform: translateX(100%);
+  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+  //   0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.menu-close {
+  position: absolute;
+  min-height: 40px;
+  min-width: 40px;
+  background-color: transparent;
+  border: none;
+
+  outline: none;
+  cursor: pointer;
+  margin-left: auto;
+  top: 10px;
+  right: 15px;
+}
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.mobile-menu li:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc (47 / 40);
+  letter-spacing: 0.02em;
+  color: var(--primary-black-color);
+}
+.mobile-link:hover,
+.mobile-link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-link {
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+.contacts-link-email {
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+}
+.mobile-socials {
+  margin-top: 64px;
+  display: flex;
+}
+
+@media (max-width: 480px) {
+  .mobile-socials {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.mobile-socials li:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.socials-link {
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .socials-link {
+    width: 25%;
+  }
+}
+.socials-link--primary {
+  padding-left: 0;
 }
